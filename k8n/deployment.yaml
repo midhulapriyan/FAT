@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gold-rate-app
-          image: DOCKERHUB_USERNAME/gold-rate-dashboard:latest
+          image: midhulapriyan/gold-rate-dashboard:latest
           ports:
             - containerPort: 3000
