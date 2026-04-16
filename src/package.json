@@ -1,0 +1,13 @@
+{
+    "name": "gold-rate-dashboard",
+    "version": "1.0.0",
+    "description": "Gold rate statistics for one year with a graph",
+    "main": "server.js",
+    "type": "commonjs",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.19.2"
+    }
+  }

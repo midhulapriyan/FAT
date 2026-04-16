@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Gold Rate - 1 Year Statistics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gold Rate Statistics (Last 1 Year)</h1>
+    <p class="sub">Line chart from API data: <code>/api/gold/year</code></p>
+
+    <div class="card">
+      <canvas id="goldChart"></canvas>
+    </div>
+
+    <div class="footer">
+      <button id="reloadBtn">Reload Data</button>
+      <span id="meta"></span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

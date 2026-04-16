@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gold-rate-app
+  labels:
+    app: gold-rate-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gold-rate-app
+  template:
+    metadata:
+      labels:
+        app: gold-rate-app
+    spec:
+      containers:
+        - name: gold-rate-app
+          image: DOCKERHUB_USERNAME/gold-rate-dashboard:latest
+          ports:
+            - containerPort: 3000
